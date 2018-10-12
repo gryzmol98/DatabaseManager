@@ -1,4 +1,5 @@
 # readme.txt
+Ranking modeli np.telefonów
 Dodawanie nowych modeli
 Usuwanie modeli, które nie są w rankingu
 Ocena według redakcji
