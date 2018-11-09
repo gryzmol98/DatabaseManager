@@ -22,15 +22,12 @@ void MainWindow::on_pushButton_clicked()
 
     con.openConnection();
 
-    //Modeling for Table View.
 
     QSqlQueryModel* databaseModel = new QSqlQueryModel;
 
-    //Sql Query Prepration
 
     QSqlQuery* databaseQuery = new QSqlQuery(con.ranking);
 
-    //Search based on option
 
     if(ui->comboBox->currentText() == "Kod"){
 

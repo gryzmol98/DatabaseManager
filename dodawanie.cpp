@@ -27,15 +27,15 @@ void Dodawanie::on_pushButton_clicked()
 
     if(ui->lineEdit->text()=="" || ui->lineEdit_2->text()=="" || ui->lineEdit_3->text()=="" || ui->lineEdit->text()==""){
 
-            //Empty Feild throw error.
+
             QMessageBox::about(this,"Niekompletne!","Wpisz wszystkie wartości.");
     }
     else{
 
-        //Write Query to database.
+
         QSqlQuery writeQry;
 
-        writeQry.prepare("insert into ranking values(:kod,:model,:cena,:ocena,:rok);");
+        writeQry.prepare("insert into Ranking values(:kod,:model,:cena,:ocena,:rok);");
         writeQry.bindValue(":kod",ui->lineEdit->text());
         writeQry.bindValue(":cena",ui->lineEdit_2->text());
         writeQry.bindValue(":ocena",ui->lineEdit_3->text());

@@ -22,7 +22,6 @@ void Usuwanie::on_pushButton_clicked()
 void Usuwanie::on_pushButton_2_clicked()
 {
     connectDatabase con;
-    bool usuniety;
 
     con.openConnection();
 
@@ -32,21 +31,15 @@ void Usuwanie::on_pushButton_2_clicked()
     else{
             QSqlQuery removeQry;
             if(ui->lineEdit->text() == ""){
-            QMessageBox::about(this,"Nie znaleziono.","Wpisz poprawnie!");
+            QMessageBox::about(this,"Błąd.","Brak wartości, spróbuj ponownie.");
             }
             else if(ui->lineEdit->text() != ""){
                 removeQry.prepare("delete from Ranking where KOD = :kod");
                 removeQry.bindValue(":kod",ui->lineEdit->text());
-            }
+                removeQry.exec();
+                QMessageBox::about(this,"Usunięto.","Wartości usunieto");
+            }         
 
-            usuniety =removeQry.exec();
-
-            if(usuniety){
-                QMessageBox::about(this,"Usunięto!","Usunięto.");
-            }
-            else{
-                QMessageBox::about(this,"Błąd.","Zła wartość, spróbuj ponownie.");
-            }
     }
     ui->lineEdit->setText("");
 

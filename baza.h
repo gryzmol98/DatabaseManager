@@ -4,15 +4,12 @@
 #include <QMainWindow>
 #include <QtSql>
 #include <QDebug>
-#include <QFileInfo>
-#include <QDebug>
 #include <mainwindow.h>
 #include <ui_mainwindow.h>
 
 class connectDatabase
 {
 public:
-    connectDatabase() {}
 
     QSqlDatabase ranking;
 

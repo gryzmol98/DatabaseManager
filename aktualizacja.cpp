@@ -23,20 +23,15 @@ void Aktualizacja::on_pushButton_clicked()
 void Aktualizacja::on_pushButton_2_clicked()
 {
     connectDatabase con;
-    bool poprawne = 0 ;
+    bool poprawne = 0;
 
     con.openConnection();
 
     if(ui->lineEdit->text() == ""){
-        QMessageBox::about(this,"Brak kodu!","Wpisz, aby zaktualizować");
+        QMessageBox::warning(this,"Brak kodu!","Wpisz, aby zaktualizować");
     }
     else{
             QSqlQuery editQry;
-
-
-            if(ui->lineEdit_2->text() == "" && ui->lineEdit_3->text() == "" && ui->lineEdit_4->text() == "" && ui->lineEdit_5->text() == ""){
-                QMessageBox::about(this,"Brak wartości!","Wpisz, aby zaktualizować!");
-            }
 
 
             if(ui->lineEdit_5->text()!=""){
@@ -74,7 +69,7 @@ void Aktualizacja::on_pushButton_2_clicked()
         QMessageBox::about(this,"Zaktualizowano","Wartości zaktualizowano!");
     }
     else if (ui->lineEdit->text() != ""){
-        QMessageBox::about(this,"Błąd!","Bład wartości!");
+        QMessageBox::about(this,"Brak wartości!","Wpisz, aby zaktualizować!");
     }
 
     ui->lineEdit->setText("");
