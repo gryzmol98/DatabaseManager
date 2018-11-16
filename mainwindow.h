@@ -6,6 +6,8 @@
 #include "dodawanie.h"
 #include "aktualizacja.h"
 #include "usuwanie.h"
+#include "porownaj.h"
+
 
 namespace Ui {
 class MainWindow;
@@ -28,11 +30,14 @@ private slots:
 
     void on_actionUsu_triggered();
 
+    void on_actionPor_wnaj_triggered();
+
 private:
     Ui::MainWindow *ui;
     Dodawanie dodaj;
     Aktualizacja aktualizuj;
     Usuwanie usun;
+    Porownaj porownaj;
 
 };
 

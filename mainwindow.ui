@@ -143,6 +143,7 @@
     </property>
     <addaction name="actionDodaj"/>
     <addaction name="actionUsu"/>
+    <addaction name="actionPor_wnaj"/>
    </widget>
    <widget class="QMenu" name="menuEdytuj">
     <property name="title">
@@ -166,6 +167,11 @@
   <action name="actionUsu">
    <property name="text">
     <string>Usuń</string>
+   </property>
+  </action>
+  <action name="actionPor_wnaj">
+   <property name="text">
+    <string>Porównaj</string>
    </property>
   </action>
  </widget>

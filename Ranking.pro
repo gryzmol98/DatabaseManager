@@ -16,17 +16,20 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     dodawanie.cpp \
     usuwanie.cpp \
-    aktualizacja.cpp
+    aktualizacja.cpp \
+    porownaj.cpp
 
 HEADERS  += mainwindow.h \
     dodawanie.h \
     usuwanie.h \
     aktualizacja.h \
-    baza.h
+    baza.h \
+    porownaj.h
 
 FORMS    += mainwindow.ui \
     dodawanie.ui \
     usuwanie.ui \
-    aktualizacja.ui
+    aktualizacja.ui \
+    porownaj.ui
 
 RESOURCES +=

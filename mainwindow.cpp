@@ -94,3 +94,8 @@ void MainWindow::on_actionUsu_triggered()
 {
     usun.show();
 }
+
+void MainWindow::on_actionPor_wnaj_triggered()
+{
+    porownaj.show();
+}
