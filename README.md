@@ -1,7 +1,1 @@
-Ranking modeli np.telefonów
-Dodawanie nowych modeli
-Usuwanie modeli, które nie są w rankingu
-Ocena według redakcji
-Przesuwanie pozycji w rankingu
-Porównanie 2 modeli w danej kategorii
-Przechowwywanie w bazie danych
+It's a basic program that works on SQL database. It is a smartphone ranking. You can change the position in database, search, add, delete and so on.. The most basic thing, that you can do with database. I made it in QTdesigner.
